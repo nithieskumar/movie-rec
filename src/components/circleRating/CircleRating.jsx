@@ -9,9 +9,9 @@ const CircleRating = ({ rating }) => {
         <div className="circleRating">
             <CircularProgressbar
                 value={rating}
-                maxValue={10}//by default max value is 100 in react-circular-progressbar
+                maxValue={10}
                 text={rating}
-                styles={buildStyles({//cutome styles
+                styles={buildStyles({
                     pathColor:
                         rating < 5 ? "red" : rating < 7 ? "orange" : "green",
                 })}
